@@ -2,7 +2,7 @@ import os
 from discord import app_commands, Intents, Client, Interaction
 
 class BotDiscord(Client):
-    def __init__(self, * intents: Intents):
+    def __init__(self, intents: Intents):
         super().__init__(intents=intents)
         self.tree = app_commands.CommandTree(self)
     
